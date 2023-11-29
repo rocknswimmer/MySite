@@ -2,6 +2,7 @@ import React from 'react';
 
 function Contact() {
 
+//add some fancy functionality like email from this page when email is clicked
 
   return (
     <div>
