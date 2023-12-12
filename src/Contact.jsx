@@ -9,8 +9,8 @@ function Contact() {
       <h1>Andrew Simmons</h1>
       <p>Email: andy116@vt.edu</p>
       <p>Phone: 703-309-5326</p>
-      <p>LinkedIn:</p>
-      <p>GitHub:</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/andrewsimmons116/">https://www.linkedin.com/in/andrewsimmons116/</a></p>
+      <p>GitHub: <a href="https://github.com/rocknswimmer">https://github.com/rocknswimmer</a></p>
     </div>
   )
 }

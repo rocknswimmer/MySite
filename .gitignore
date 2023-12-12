@@ -1,1 +1,7 @@
 /node_modules/
+
+*bundle.js
+*bundle.js.gz
+bundle.js
+
+.env
