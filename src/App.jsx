@@ -4,7 +4,7 @@ function App() {
 
   return (
     <div>
-      <h1>Portfolio here</h1>
+      <h1>Parent container for pages here</h1>
     </div>
   )
 }
