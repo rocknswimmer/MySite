@@ -7,7 +7,8 @@ function Projects() {
     <div>
       <h1>My Projects</h1>
       <h2>Solo Projects</h2>
-      {/* job site
+      {/* Map to Project cards for:
+      job site
       virtual relay
       modals and accordians educational? */}
 
