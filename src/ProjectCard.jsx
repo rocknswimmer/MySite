@@ -1,13 +1,13 @@
 import React from 'react';
 
-function ProjectCard() {
+function ProjectCard({project}) {
 
 
   return (
     <div>
-      <h1>Project Title</h1>
+      <h1>{project.title}</h1>
       <div>Photo here with link below</div>
-      <p>Description of project</p>
+      <p>{project.description}</p>
 
 
     </div>
