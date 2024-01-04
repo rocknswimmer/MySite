@@ -10,7 +10,10 @@ function Projects() {
       <h1>My Projects</h1>
       <h2>Solo Projects</h2>
       {projectData.map((project, i) => {
-        return(<ProjectCard project={project} key={i}/>)
+        if(project.type === "solo"){
+          return(<ProjectCard project={project} key={i}/>)
+        }
+
       })}
       {/* Map to Project cards for:
       job site
@@ -20,6 +23,12 @@ function Projects() {
       <h2>Team Projects</h2>
       {/* ecommerce site
       birder App */}
+      {projectData.map((project, i) => {
+        if(project.type === "team"){
+          return(<ProjectCard project={project} key={i}/>)
+        }
+
+      })}
 
     </div>
   )
