@@ -30,6 +30,16 @@ function Projects() {
 
       })}
 
+      <h2>Educational Projects</h2>
+      {/* ecommerce site
+      birder App */}
+      {projectData.map((project, i) => {
+        if (project.type === "edu") {
+          return (<ProjectCard project={project} key={i} />)
+        }
+
+      })}
+
     </div>
   )
 }
