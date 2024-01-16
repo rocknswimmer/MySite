@@ -1,0 +1,4 @@
+.newlines {
+  white-space: pre-wrap;
+  /*  should handle tab and new line pre-line for just lines */
+}

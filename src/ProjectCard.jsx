@@ -9,7 +9,7 @@ function ProjectCard({project}) {
       <h3>{project.title}</h3>
       <div>Photo here with link below</div>
       <p>{project.description}</p>
-      <Accordion title={"More Project Details"} content={project.details} />
+      <Accordion title={"More Project Details"} content={<p className="newlines" >{project.details}</p>} />
 
 
     </div>
