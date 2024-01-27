@@ -19,11 +19,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>
 
       <Routes>
-      <Route path='/' element={<App />}/>
-      {/* <Route path='' ></Route> */}
-      <Route path='about' element={<About />}/>
-      <Route path='projects' element={<Projects />}/>
-      <Route path='contact' element={<Contact />}/>
+      <Route path='/*' element={<App />}/>
+      {/* <Route path='/about' element={<About />}/>
+      <Route path='/projects' element={<Projects />}/>
+      <Route path='/contact' element={<Contact />}/> */}
     </Routes>
 
     </Router>
