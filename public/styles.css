@@ -21,10 +21,15 @@
 
 .binder{
   background-color: aqua;
+  padding-left: 50px;
 
 }
 
 .pages{
   background-color: rgb(50, 255, 50);
 
+}
+
+button {
+  margin: 10px;
 }
