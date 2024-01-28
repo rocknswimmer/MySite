@@ -6,7 +6,7 @@ function Projects() {
 
 
   return (
-    <div>
+    <div className="projects">
       <h1>My Projects</h1>
       <h2>Solo Projects</h2>
       {projectData.map((project, i) => {

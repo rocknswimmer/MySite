@@ -5,7 +5,7 @@ function Contact() {
 //add some fancy functionality like email from this page when email is clicked
 
   return (
-    <div>
+    <div className="contact">
       <h1>Andrew Simmons</h1>
       <p>Email: andy116@vt.edu</p>
       <p>Phone: 703-309-5326</p>
