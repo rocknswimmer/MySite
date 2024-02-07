@@ -86,6 +86,9 @@ button {
   max-width: 400px;
 }
 
+
+
+@media screen and (min-width: 1100px){
 .horizontal{
   display: flex;
   flex-direction: row;
@@ -103,6 +106,8 @@ button {
   margin-left: 10px;
  padding-left: 10px;
  min-width: 450px;
+}
+
 }
 
 /* contact page */
