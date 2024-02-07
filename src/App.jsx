@@ -10,17 +10,19 @@ function App() {
 
   return (
     <div className="binder">
-      <div className="buttons">
-        <button onClick={() => {navigate("/about")}}>about</button>
-        <button onClick={() => {navigate("/projects")}}>projects</button>
-        <button onClick={() => {navigate("/contact")}}>contact</button>
-      </div>
-      <div className="pages">
-      <Routes>
-      <Route path='/about' element={<About />}/>
-      <Route path='/projects' element={<Projects />}/>
-      <Route path='/contact' element={<Contact />}/>
-    </Routes>
+      <div className="paper">
+        <div className="buttons">
+          <button onClick={() => { navigate("/about") }}>about</button>
+          <button onClick={() => { navigate("/projects") }}>projects</button>
+          <button onClick={() => { navigate("/contact") }}>contact</button>
+        </div>
+        <div className="pages">
+          <Routes>
+            <Route path='/about' element={<About />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </div>
       </div>
     </div>
   )
