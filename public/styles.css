@@ -39,6 +39,7 @@ body {
 }
 
 .paper{
+
   max-height: 90vh;
   background-image: repeating-linear-gradient( rgb(254, 253, 248) 0 5px, rgb(47, 47, 34) 5px 6px);
 }
@@ -53,10 +54,12 @@ button {
   width: 100%;
   overflow-y: scroll;
   max-height: 85vh;
-
+  min-height: 83vh;
 }
 
 /*styles for the different pages*/
+
+/* about page */
 
 .about {
   text-align: center;
@@ -66,11 +69,11 @@ button {
 }
 
 .summary {
-  max-width: 300px;
+  max-width: 500px;
 }
 
 
-
+/* projects page */
 
 .projects {
   text-align: center;
@@ -83,8 +86,26 @@ button {
   max-width: 400px;
 }
 
+.horizontal{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
+}
 
+.solo{
+  margin-right: 10px;
+  padding-right: 10px;
+  min-width: 450px;
+}
+
+.team{
+  margin-left: 10px;
+ padding-left: 10px;
+ min-width: 450px;
+}
+
+/* contact page */
 
 .contact {
   text-align: center;
