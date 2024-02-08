@@ -34,7 +34,7 @@ body {
   height: 100vh;
   width: 100vw;
   padding: 50px 0 50px 50px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 
 }
 
@@ -47,6 +47,24 @@ body {
 button {
   margin: 10px;
 }
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.abutton {
+  background-color: rgb(28, 241, 252);
+}
+
+.pbutton {
+  background-color: orange;
+}
+
+.cbutton {
+  background-color: rgb(81, 252, 126);
+}
+
 
 .pages{
   background-color: rgb(254, 253, 248);

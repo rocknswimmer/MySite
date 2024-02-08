@@ -12,9 +12,9 @@ function App() {
     <div className="binder">
       <div className="paper">
         <div className="buttons">
-          <button onClick={() => { navigate("/about") }}>about</button>
-          <button onClick={() => { navigate("/projects") }}>projects</button>
-          <button onClick={() => { navigate("/contact") }}>contact</button>
+          <button onClick={() => { navigate("/about") }} className="abutton">about</button>
+          <button onClick={() => { navigate("/projects") }} className="pbutton">projects</button>
+          <button onClick={() => { navigate("/contact") }} className="cbutton">contact</button>
         </div>
         <div className="pages">
           <Routes>
