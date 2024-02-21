@@ -73,6 +73,7 @@ button {
   overflow-y: scroll;
   max-height: 85vh;
   min-height: 83vh;
+  border-left: dotted black 10px;
 }
 
 /*styles for the different pages*/
