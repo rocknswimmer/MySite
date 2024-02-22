@@ -6,5 +6,6 @@ const projectData = [
   {title: "Modals and Accordians", photo: "url/permanatelocation", link: "deployedurl", description: "Provide a plug and play resource that explains what modals and accordians are", details: "\tI built this for a 5-minute presentation to share technical information with my juniors. The repository was designed so that they could fork it and then learn from the pre-built components how they work.\n\n \tThe presentation used modals and accordions to display the information about each. The first modal that opens explains the difference between a modal and a pop-up. We then flow into an accordion example with a ??? accordion and button inside. This launches the presentation within the presentation, laughter, and its benefits on mental health. The Junior phase of Hack Reactor is one of the most intense learning experiences I have been through, so I wanted to help out the next class in any way I could. ", type: "edu"},
 ]
 
+
 export default projectData;
 
