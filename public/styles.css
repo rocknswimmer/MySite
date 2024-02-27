@@ -65,6 +65,10 @@ button {
   background-color: rgb(81, 252, 126);
 }
 
+.ebutton {
+  background-color: rgb(255, 28, 28);
+}
+
 
 .pages{
   background-color: rgb(254, 253, 248);
