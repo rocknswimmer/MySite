@@ -109,7 +109,7 @@ button {
 }
 
 .project {
-  max-width: 400px;
+  max-width: 500px;
 }
 
 
@@ -125,13 +125,13 @@ button {
 .solo{
   margin-right: 10px;
   padding-right: 10px;
-  min-width: 450px;
+  min-width: 500px;
 }
 
 .team{
   margin-left: 10px;
  padding-left: 10px;
- min-width: 450px;
+ min-width: 500px;
 }
 
 button {
