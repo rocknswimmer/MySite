@@ -4,8 +4,19 @@ function Experience() {
 
 
   return (
-    <div className="about">
-      <h1>Experience title?</h1>
+    <div className="projects">
+       <h1>Less Abridged Resume</h1>
+      <div className="horizontal">
+
+        {/* experience cards */}
+
+      </div>
+
+      {/* <div className="horizontal">
+      </div> */}
+
+
+
 
     </div>
   )
