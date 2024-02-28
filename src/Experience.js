@@ -1,4 +1,5 @@
 import React from 'react';
+import ExperienceCard from './ExperienceCard.js'
 
 function Experience() {
 
@@ -9,6 +10,7 @@ function Experience() {
       <div className="horizontal">
 
         {/* experience cards */}
+        <ExperienceCard />
 
       </div>
 
