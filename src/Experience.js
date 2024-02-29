@@ -1,5 +1,6 @@
 import React from 'react';
-import ExperienceCard from './ExperienceCard.js'
+import ExperienceCard from './ExperienceCard.js';
+import ExperienceData from './ExperienceData.js';
 
 function Experience() {
 
