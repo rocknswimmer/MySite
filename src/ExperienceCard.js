@@ -10,8 +10,8 @@ function ExperienceCard({}) {
       {/* company name or title first? */}
       <h4>American Eagle</h4>
 
-      <p>Time: </p>
-      <p>Skills:</p>
+      <p>Experience Gained: </p>
+      <p>Skills Learned: </p>
 
 
       <Accordion title={"More Details"} content={<p className="newlines" >Lorem ipsum dolor sit amet, his id error consul. Qui an nonumy laudem dissentiunt, in exerci adversarium pro. Vocibus incorrupte est te. Inani recteque conceptam ne vel, ne accusata argumentum elaboraret mea.
