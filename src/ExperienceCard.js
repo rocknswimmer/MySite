@@ -6,7 +6,7 @@ function ExperienceCard({gig}) {
 
   return (
     <div className="project">
-      <h3>{git.title}</h3>
+      <h3>{gig.title}</h3>
       {/* company name or title first? */}
       <h4>{gig.company}</h4>
 
