@@ -1,8 +1,8 @@
-const ExperienceData = [
+const experienceData = [
   {title: "Virtual Relay",},
 
 ]
 
 
-export default ExperienceData;
+export default experienceData;
 
