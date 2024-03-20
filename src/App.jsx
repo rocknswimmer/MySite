@@ -15,7 +15,7 @@ function App() {
         <div className="buttons">
           <button onClick={() => { navigate("/about") }} className="abutton">About</button>
           <button onClick={() => { navigate("/projects") }} className="pbutton">Projects</button>
-          <button onClick={() => { navigate("/experience") }} className="ebutton">Experience</button>
+          {/* <button onClick={() => { navigate("/experience") }} className="ebutton">Experience</button> */}
           <button onClick={() => { navigate("/contact") }} className="cbutton">Contact</button>
         </div>
         <div className="pages">
