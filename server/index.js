@@ -32,6 +32,15 @@ app.get('/views', function(req,res) {
 
 })
 
+app.put('/addview', function(req, res) {
+  pool.query('update views set view_count = view_count + 1 where id = 1 returning *', (err, data) => {
+    if(err) {
+      console.log("error adding view", err);
+    }
+    res.send(data)
+  })
+})
+
 /*
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 final get route since it will override all others, kinda like css rules

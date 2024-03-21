@@ -22,9 +22,20 @@ function App() {
     })
   }
 
+  const putViews = () => {
+    axios.put('/addview')
+    .then((res) => {
+      console.log(res)
+      getViews()
+    })
+    .catch((err) => {
+      console.log("error adding view")
+    })
+  }
+
   useEffect(() => {
-    getViews()
-    console.log("times useeffect runs")
+    putViews()
+    //console.log("times useeffect runs")
   }, [])
 
 
