@@ -23,7 +23,12 @@ app.use(compression());
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/views', function(req,res) {
-  res.send("getting around /* get route")
+  pool.query('select view_count as views from views where id = 1', (err, data) => {
+    if (err) {
+      console.log("error getting view count", err);
+    }
+    res.send(data)
+  })
 
 })
 

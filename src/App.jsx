@@ -14,7 +14,8 @@ function App() {
   const getViews = () => {
     axios.get('/views')
     .then((res) => {
-      console.log(res.data)
+      // console.log(res.data)
+      setViews(res.data.rows[0].views)
     })
     .catch((err) => {
       console.log("error getting view count")
@@ -23,6 +24,7 @@ function App() {
 
   useEffect(() => {
     getViews()
+    console.log("times useeffect runs")
   }, [])
 
 
