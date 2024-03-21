@@ -1,17 +1,35 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from "./About.jsx";
 import Projects from "./Projects.jsx";
 import Contact from "./Contact.jsx";
 import Experience from "./Experience.js";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios';
 
 function App() {
   const navigate = useNavigate();
+  const [views, setViews] = useState("None")
+
+  const getViews = () => {
+    axios.get('/views')
+    .then((res) => {
+      console.log(res.data)
+    })
+    .catch((err) => {
+      console.log("error getting view count")
+    })
+  }
+
+  useEffect(() => {
+    getViews()
+  }, [])
+
+
 
   return (
     <div className="binder">
-      <span className="views">{`views (${13})`}</span>
+      <span className="views">{`views (${views})`}</span>
       <div className="paper">
         <div className="buttons">
           <button onClick={() => { navigate("/about") }} className="abutton">About</button>
