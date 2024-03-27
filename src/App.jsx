@@ -40,10 +40,10 @@ function App() {
 
         getViews()
         //localStorage.lastChecked = "time eventually"
-        console.log("in if")
+        //console.log("in if")
 
       } else {
-        console.log("in else")
+        //console.log("in else")
         localStorage.lastChecked = Date.now()
         putViews()
       }
