@@ -35,11 +35,20 @@ function App() {
 
   useEffect(() => {
     if(localStorage.lastChecked !== undefined){
-      console.log("should not print yet")
+      console.log("should print after refresh now")
+      if(localStorage.lastChecked === "time") { // compair time now to last checked time and if its been long enough update view count
+        localStorage.lastChecked = "time eventually"
+        putViews()
+      } else {
+        localStorage.lastChecked = "time"
+        getViews()// view count not updating, but also not showing up
+      }
     } else {
       console.log("useEffect looking for lastChecked in local storage, but its undefined")
+      localStorage.lastChecked = "time eventually"
+      putViews()
     }
-    putViews()
+
     //console.log("times useeffect runs")
   }, [])
 
