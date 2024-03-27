@@ -34,6 +34,11 @@ function App() {
   }
 
   useEffect(() => {
+    if(localStorage.lastChecked !== undefined){
+      console.log("should not print yet")
+    } else {
+      console.log("useEffect looking for lastChecked in local storage, but its undefined")
+    }
     putViews()
     //console.log("times useeffect runs")
   }, [])
