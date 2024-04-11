@@ -7,7 +7,7 @@ function ProjectCard({project}) {
   return (
     <div className="project">
       <h3>{project.title}</h3>
-      <div>Photo here with link below</div>
+      <img  crossorigin="anonymous" src={project.photo}/>
       <p>{project.description}</p>
       <h4>{project.link.length > 1 ? "links:" : "Link:"}</h4>
       <div>
