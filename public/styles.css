@@ -102,6 +102,10 @@ button {
   max-width: 500px;
 }
 
+.mug {
+  max-height: 500px;
+  max-width: 300px;
+}
 
 /* projects page */
 
