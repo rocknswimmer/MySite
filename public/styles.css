@@ -120,6 +120,10 @@ button {
   max-width: 500px;
 }
 
+.photos {
+  max-width:450px;
+  max-height: 500px;
+}
 
 
 @media screen and (min-width: 1100px){
