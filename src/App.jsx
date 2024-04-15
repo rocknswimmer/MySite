@@ -60,7 +60,7 @@ function App() {
 
   return (
     <div className="binder">
-      <span className="views">{`views (${views})`}</span>
+      {/* <span className="views">{`views (${views})`}</span> */}
       <div className="paper">
         <div className="buttons">
           <button onClick={() => { navigate("/about") }} className="abutton">About</button>
