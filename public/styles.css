@@ -87,6 +87,10 @@ button {
   border-left: dotted black 10px;
 }
 
+img {
+  border-radius: 13px;
+}
+
 /*styles for the different pages*/
 
 /* about page */
