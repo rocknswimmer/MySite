@@ -56,6 +56,13 @@ function App() {
     //console.log("times useeffect runs")
   }, [])
 
+  const trackClick = (type,location) => {
+    axios.post('/clicked',{
+      type:type,
+      location,location
+    })
+  }
+
 
 
   return (
@@ -70,7 +77,7 @@ function App() {
         </div>
         <div className="pages">
           <Routes>
-            <Route path='/about' element={<About />} />
+            <Route path='/about' element={<About test={"props pass through routes"}/>} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/experience' element={<Experience />} />
             <Route path='/contact' element={<Contact />} />
