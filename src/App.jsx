@@ -25,8 +25,9 @@ function App() {
   const putViews = () => {
     axios.put('/addview')
     .then((res) => {
-      console.log(res)
+      console.log(res)//comment out////////////////////////////////////////////////////////////////////////////////////////
       getViews()
+      localStorage.viewer=res.data.rows[0].view_count
     })
     .catch((err) => {
       console.log("error adding view")
