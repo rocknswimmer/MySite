@@ -10,7 +10,7 @@ function ProjectCard({project,track}) {
       <img  crossOrigin="anonymous" src={project.photo} className="photos"/>
       <p>{project.description}</p>
 
-      <h4>{project.link.length > 1 ? "links:" : "Link:"}</h4>
+      <h4>{project.link.length > 1 ? "Links:" : "Link:"}</h4>
       <div>
         {project.link.map((tuple,i) => {
 
@@ -18,9 +18,9 @@ function ProjectCard({project,track}) {
           return (<p key={i}>{<a href={tuple[1]}>{tuple[0]}</a>}</p>)
         })}
       </div>
-      <Accordion title={"More Project Details"} content={<p className="newlines" >{project.details}</p>} />
+      <Accordion track={track} project={project} title={"More Project Details"} content={<p className="newlines" >{project.details}</p>} />
 
-<button onClick={()=>{track("testing","projects cards")}}>test Track</button>
+{/* <button onClick={()=>{track("testing","projects cards")}}>test Track</button> */}
     </div>
   )
 }
