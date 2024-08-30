@@ -15,7 +15,7 @@ function ProjectCard({project,track}) {
         {project.link.map((tuple,i) => {
 
 
-          return (<p key={i}>{<a href={tuple[1]}>{tuple[0]}</a>}</p>)
+          return (<p key={i}>{<a href={tuple[1]} target="_blank" onClick={() => {track(tuple[0][0]==="G"?"git":"deploy",project.title[0]==="E"?(i===0?"FEC":"SDC"):project.title)}}>{tuple[0]}</a>}</p>)
         })}
       </div>
       <Accordion track={track} project={project} title={"More Project Details"} content={<p className="newlines" >{project.details}</p>} />
