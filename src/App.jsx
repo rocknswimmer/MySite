@@ -59,7 +59,13 @@ function App() {
   const trackClick = (type,location) => {
     axios.post('/clicked',{
       type:type,
-      location,location
+      location:location,
+      viewer:localStorage.viewer,
+    }).then((res) => {
+      console.log("click tracked",res.data)
+    })
+    .catch((err) => {
+      console.log("error tracking click")
     })
   }
 
