@@ -1,7 +1,7 @@
 import React from 'react';
 import Accordion from "./accordian.js"
 
-function ProjectCard({project}) {
+function ProjectCard({project,track}) {
 
 
   return (
@@ -20,7 +20,7 @@ function ProjectCard({project}) {
       </div>
       <Accordion title={"More Project Details"} content={<p className="newlines" >{project.details}</p>} />
 
-
+<button onClick={()=>{track("testing","projects cards")}}>test Track</button>
     </div>
   )
 }

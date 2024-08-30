@@ -13,7 +13,7 @@ function Projects({track}) {
           <h2>Solo Projects</h2>
           {projectData.map((project, i) => {
             if (project.type === "solo") {
-              return (<ProjectCard project={project} key={i} />)
+              return (<ProjectCard project={project} key={i} track={track} />)
             }
 
           })}
@@ -30,7 +30,7 @@ function Projects({track}) {
       birder App */}
           {projectData.map((project, i) => {
             if (project.type === "team") {
-              return (<ProjectCard project={project} key={i} />)
+              return (<ProjectCard project={project} key={i} track={track}/>)
             }
 
           })}
@@ -43,7 +43,7 @@ function Projects({track}) {
       birder App */}
       {projectData.map((project, i) => {
         if (project.type === "edu") {
-          return (<ProjectCard project={project} key={i} />)
+          return (<ProjectCard project={project} key={i} track={track}/>)
         }
 
       })}
