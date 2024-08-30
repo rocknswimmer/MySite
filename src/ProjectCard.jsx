@@ -12,10 +12,10 @@ function ProjectCard({project}) {
 
       <h4>{project.link.length > 1 ? "links:" : "Link:"}</h4>
       <div>
-        {project.link.map((tuple) => {
+        {project.link.map((tuple,i) => {
 
 
-          return (<p>{<a href={tuple[1]}>{tuple[0]}</a>}</p>)
+          return (<p key={i}>{<a href={tuple[1]}>{tuple[0]}</a>}</p>)
         })}
       </div>
       <Accordion title={"More Project Details"} content={<p className="newlines" >{project.details}</p>} />
