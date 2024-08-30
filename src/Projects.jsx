@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from './ProjectCard.jsx';
 import projectData from './ProjectData.js';
 
-function Projects() {
+function Projects({track}) {
 
 
   return (

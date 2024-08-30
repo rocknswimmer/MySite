@@ -76,15 +76,15 @@ function App() {
       {/* <span className="views">{`views (${views})`}</span> */}
       <div className="paper">
         <div className="buttons">
-          <button onClick={() => { navigate("/about") }} className="abutton">About</button>
-          <button onClick={() => { navigate("/projects") }} className="pbutton">Projects</button>
+          <button onClick={() => { navigate("/about"); trackClick("nav","about") }} className="abutton">About</button>
+          <button onClick={() => { navigate("/projects"); trackClick("nav","projects") }} className="pbutton">Projects</button>
           {/* <button onClick={() => { navigate("/experience") }} className="ebutton">Experience</button> */}
-          <button onClick={() => { navigate("/contact") }} className="cbutton">Contact</button>
+          <button onClick={() => { navigate("/contact"); trackClick("nav","contact") }} className="cbutton">Contact</button>
         </div>
         <div className="pages">
           <Routes>
-            <Route path='/about' element={<About test={"props pass through routes"}/>} />
-            <Route path='/projects' element={<Projects />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/projects' element={<Projects track={(type,location) => {trackClick(type,location)}}/>} />
             <Route path='/experience' element={<Experience />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>

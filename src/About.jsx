@@ -1,6 +1,6 @@
 import React from 'react';
 
-function About({test}) {
+function About() {
 
 
   return (
