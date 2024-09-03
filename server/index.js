@@ -41,6 +41,11 @@ app.put('/addview', function(req, res) {
   })
 })
 
+app.post('/clicked', function(req,res) {
+  const {type,location,viewer}=req.body;
+  //pool.query()
+  res.send(`info recieved: ${type}, ${location}, ${viewer}`)//delete/ remove instertability after check
+})
 /*
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 final get route since it will override all others, kinda like css rules
