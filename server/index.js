@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.get('/views', function(req,res) {
   pool.query('select view_count as views from views where id = 1', (err, data) => {
     if (err) {
-      console.log("error getting view count", err);
+      console.log("error getting view count");
     }
     res.send(data)
   })
@@ -35,7 +35,7 @@ app.get('/views', function(req,res) {
 app.put('/addview', function(req, res) {
   pool.query('update views set view_count = view_count + 1 where id = 1 returning *', (err, data) => {
     if(err) {
-      console.log("error adding view", err);
+      console.log("error adding view");
     }
     res.send(data)
   })
@@ -43,9 +43,17 @@ app.put('/addview', function(req, res) {
 
 app.post('/clicked', function(req,res) {
   const {type,location,viewer}=req.body;
-  //pool.query()
-  res.send(`info recieved: ${type}, ${location}, ${viewer}`)//delete/ remove instertability after check
+  pool.query('insert into clicked (viewer, view_type, view_location) values ($1, $2, $3)', [viewer,type,location], (err, data) => {
+    if(err) {
+      console.log('error tracking a click')
+    }
+    res.send(err?"error tracking click":"click tracked")
+  })
+
 })
+
+
+
 /*
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 final get route since it will override all others, kinda like css rules
