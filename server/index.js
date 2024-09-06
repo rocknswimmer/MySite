@@ -32,6 +32,16 @@ app.get('/views', function(req,res) {
 
 })
 
+app.get('/tracked', function(req,res) {
+  pool.query('select * from clicked', (err, data) => {
+    if (err) {
+      console.log("error getting view count");
+    }
+    res.send(data)
+  })
+
+})
+
 app.put('/addview', function(req, res) {
   pool.query('update views set view_count = view_count + 1 where id = 1 returning *', (err, data) => {
     if(err) {
@@ -52,7 +62,7 @@ app.post('/clicked', function(req,res) {
 
 })
 
-
+// Get clicked thoughts (grab all or what do I want)
 
 /*
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
