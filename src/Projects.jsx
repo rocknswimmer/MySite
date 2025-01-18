@@ -30,23 +30,38 @@ function Projects({track}) {
       birder App */}
           {projectData.map((project, i) => {
             if (project.type === "team") {
-              return (<ProjectCard project={project} key={i} track={track}/>)
+              return (<ProjectCard project={project} key={i} track={track} />)
             }
 
           })}
         </div>
 
       </div>
-
-      <h2>Educational Projects</h2>
-      {/* ecommerce site
+      <div className="horizontal">
+        <div className="solo">
+          <h2>Educational Projects</h2>
+          {/* ecommerce site
       birder App */}
-      {projectData.map((project, i) => {
-        if (project.type === "edu") {
-          return (<ProjectCard project={project} key={i} track={track}/>)
-        }
+          {projectData.map((project, i) => {
+            if (project.type === "edu") {
+              return (<ProjectCard project={project} key={i} track={track} />)
+            }
 
-      })}
+          })}
+        </div>
+        <div className="team">
+
+          <h2>One Week/In Progress</h2>
+          {/* ecommerce site
+      birder App */}
+          {projectData.map((project, i) => {
+            if (project.type === "mvp") {
+              return (<ProjectCard project={project} key={i} track={track} />)
+            }
+
+          })}
+        </div>
+      </div>
 
     </div>
   )
